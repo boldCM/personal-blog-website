@@ -64,6 +64,11 @@
   overflow: auto;
   padding: 0 var(--gap-lg);
   width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .header__title {
