@@ -1,0 +1,91 @@
+:root {
+  --font-color-light: #706f6d;
+  --font-color-bold: #141311;
+  --font-color-default: #262523;
+  --bg-color-highlight: #fcfceb;
+
+  --font-size-xl: 2em;
+  --font-size-lg: 1.5em;
+  --font-size-md: 1.25em;
+  --font-size-xs: 1em;
+  --font-size-xxs: 0.75em;
+  /* --gap-default */
+  /* --gap-mobile */
+  /* evtl als margin/padding shortcuts definieren*/
+  /* breakpoints: */
+  --bp-mobile-end: 768px;
+  --bp-tablet-end: 1024px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 211, 164, 0.6784838935574229) 0%,
+    rgba(249, 241, 227, 0.8689600840336135) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--font-color-bold);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+h3 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  margin: 0;
+  font-size: var(--font-size-xs);
+  color: var(--font-color-default);
+}
+
+a {
+  color: var(--font-color-light);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--font-color-default);
+  cursor: pointer;
+}
+
+.grid-image {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Format CSS */
+/* Leerzeile ziwschen Regeln */
+/* Benennung: so kurz wie möglich, so lang wie nötig, mit - getrennt */
+/* möglichst shorthand properties nutzen */

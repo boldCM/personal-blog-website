@@ -1,0 +1,55 @@
+@import "./styles.css";
+@import "./nav.css";
+@import "./footer.css";
+@import "./hero-teaser.css";
+@import "./article-list.css";
+
+.home {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 56px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "hd hd" "nav main" "ft ft";
+}
+@media (min-width: 768px) {
+  .home {
+    grid-template-columns: minmax(120px, 200px) 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+.header {
+  grid-area: hd;
+  padding-bottom: 12px;
+  margin: 12px 0;
+  border-bottom: 2px solid var(--bg-color-highlight);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  grid-area: main;
+  overflow: auto;
+  padding: 0 24px;
+}
+
+.header__title {
+  font-size: var(--font-size-lg);
+}
+@media (min-width: 768px) {
+  .header__title {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.home-icon,
+.social-icon {
+  margin: 0 2px;
+  width: 32px;
+}
+
+.social-icon:hover {
+  width: 36px;
+}

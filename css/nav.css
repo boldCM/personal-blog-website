@@ -1,0 +1,26 @@
+.nav {
+  grid-area: nav;
+  border-right: 2px solid var(--bg-color-highlight);
+  padding: 2px;
+}
+@media (min-width: 768px) {
+  .nav {
+    padding: 12px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.nav__list-item {
+  list-style: none;
+  margin-bottom: 12px;
+  max-width: fit-content;
+}
+
+.nav__list-link {
+  word-wrap: break-word;
+}
