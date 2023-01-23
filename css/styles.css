@@ -4,17 +4,17 @@
   --font-color-default: #262523;
   --bg-color-highlight: #fcfceb;
 
-  --font-size-xl: 2em;
-  --font-size-lg: 1.5em;
-  --font-size-md: 1.25em;
-  --font-size-xs: 1em;
   --font-size-xxs: 0.75em;
-  /* --gap-default */
-  /* --gap-mobile */
-  /* evtl als margin/padding shortcuts definieren*/
-  /* breakpoints: */
-  --bp-mobile-end: 768px;
-  --bp-tablet-end: 1024px;
+  --font-size-xs: 1em;
+  --font-size-md: 1.25em;
+  --font-size-lg: 1.5em;
+  --font-size-xl: 2em;
+
+  --gap-xs: 6px;
+  --gap-md: 12px;
+  --gap-lg: 24px;
+
+  --article-default-gap: 8px;
 }
 
 * {
@@ -84,8 +84,3 @@ a:hover {
   align-self: center;
   justify-self: center;
 }
-
-/* Format CSS */
-/* Leerzeile ziwschen Regeln */
-/* Benennung: so kurz wie möglich, so lang wie nötig, mit - getrennt */
-/* möglichst shorthand properties nutzen */

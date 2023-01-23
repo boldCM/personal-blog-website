@@ -9,6 +9,7 @@
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "hd hd" "nav main" "ft ft";
 }
+
 @media (min-width: 768px) {
   .blog-post {
     grid-template-columns: minmax(120px, 200px) 1fr;
@@ -18,8 +19,8 @@
 
 .header {
   grid-area: hd;
-  padding-bottom: 12px;
-  margin: 12px 0;
+  padding-bottom: var(--gap-md);
+  margin: var(--gap-md) 0;
   border-bottom: 2px solid var(--bg-color-highlight);
   display: flex;
   flex-direction: row;
@@ -31,11 +32,11 @@
 .header__search {
   border: 2px solid var(--bg-color-highlight);
   border-radius: 10px;
-  padding: 0 6px;
+  padding: 0 var(--gap-xs);
   background-color: transparent;
   height: 32px;
   position: fixed;
-  right: 12px;
+  right: var(--gap-md);
 }
 
 @media (max-width: 768px) {
@@ -49,7 +50,7 @@
     display: none;
   }
   .header__search {
-    right: 24px;
+    right: var(--gap-lg);
   }
 }
 
@@ -61,13 +62,14 @@
 .main {
   grid-area: main;
   overflow: auto;
-  padding: 0 24px;
+  padding: 0 var(--gap-lg);
   width: 100%;
 }
 
 .header__title {
   font-size: var(--font-size-lg);
 }
+
 @media (min-width: 768px) {
   .header__title {
     font-size: var(--font-size-xl);
@@ -82,18 +84,20 @@
 .blog-post__meta-data {
   display: flex;
   flex-direction: row;
-  margin-bottom: 8px;
+  margin-bottom: var(--article-default-gap);
 }
 
 .blog-post__meta-item {
   color: var(--font-color-light);
   font-size: 0.6em;
 }
+
 @media (min-width: 768px) {
   .blog-post__meta-item {
     font-size: var(--font-size-xxs);
   }
 }
+
 @media (min-width: 1024px) {
   .blog-post__meta-item {
     font-size: var(--font-size-xs);
@@ -104,16 +108,16 @@
   width: 100%;
 }
 .blog-post__figcaption {
-  margin-bottom: 8px;
+  margin-bottom: var(--article-default-gap);
 }
 
 .blog-post__text {
   font-size: var(--font-size-xs);
-  margin-bottom: 8px;
+  margin-bottom: var(--article-default-gap);
 }
 
 .blog-post__text:last-of-type {
-  margin-bottom: 24px;
+  margin-bottom: var(--gap-lg);
 }
 
 .blog-post__author {
@@ -123,7 +127,7 @@
 }
 
 .blog-post__author-info {
-  margin-left: 6px;
+  margin-left: var(--gap-xs);
   display: flex;
   flex-direction: column;
 }

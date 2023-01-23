@@ -5,8 +5,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 12px;
+  margin-top: var(--gap-md);
 }
+
 @media (min-width: 768px) {
   .footer {
     flex-direction: column;
@@ -18,9 +19,10 @@
   height: 100%;
   display: flex;
   align-items: center;
-  margin-top: 6px;
+  margin-top: var(--gap-xs);
   margin-bottom: 2px;
 }
+
 @media (min-width: 768px) {
   .footer__social {
     order: 1;
@@ -33,6 +35,7 @@
   padding-bottom: 2px;
   align-self: flex-end;
 }
+
 @media (min-width: 768px) {
   .footer__copyright {
     order: 2;

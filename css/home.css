@@ -11,6 +11,7 @@
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "hd hd" "nav main" "ft ft";
 }
+
 @media (min-width: 768px) {
   .home {
     grid-template-columns: minmax(120px, 200px) 1fr;
@@ -20,8 +21,8 @@
 
 .header {
   grid-area: hd;
-  padding-bottom: 12px;
-  margin: 12px 0;
+  padding-bottom: var(--gap-md);
+  margin: var(--gap-md) 0;
   border-bottom: 2px solid var(--bg-color-highlight);
   display: flex;
   flex-direction: row;
@@ -32,12 +33,13 @@
 .main {
   grid-area: main;
   overflow: auto;
-  padding: 0 24px;
+  padding: 0 var(--gap-lg);
 }
 
 .header__title {
   font-size: var(--font-size-lg);
 }
+
 @media (min-width: 768px) {
   .header__title {
     font-size: var(--font-size-xl);
