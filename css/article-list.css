@@ -65,15 +65,15 @@
   -webkit-line-clamp: 2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 478px) {
   .article-list__item-text {
-    font-size: var(--font-size-xs);
+    -webkit-line-clamp: 4;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 865px) {
   .article-list__item-text {
-    display: block;
     font-size: var(--font-size-xs);
+    display: block;
   }
 }
